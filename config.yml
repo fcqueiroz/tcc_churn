@@ -1,0 +1,11 @@
+paths:
+  raw: /tcc_churn/data/raw/
+  external: /tcc_churn/data/external/
+  interim: /tcc_churn/data/interim/
+  processed: /tcc_churn/data/processed/
+  reports: /tcc_churn/reports/
+  models: /tcc_churn/models/
+
+
+app:
+  version: '0.1'

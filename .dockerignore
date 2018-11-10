@@ -1,0 +1,7 @@
+.git
+.idea
+plans
+references
+*.md
+.ipynb_checkpoints
+__pycache__
