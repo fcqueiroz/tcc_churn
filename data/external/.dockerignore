@@ -1,9 +1,0 @@
-# Data shouldn't be versioned.
-# Commit only the release versions of models and reports
-# These folders should remain in the visible structure (to git and docker)
-*
-
-# Do not ignore these files
-
-!.gitignore
-!.dockerignore

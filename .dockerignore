@@ -1,7 +1,6 @@
-.git
-.idea
-plans
-references
-*.md
-.ipynb_checkpoints
-__pycache__
+**/*
+*
+!environment.yml
+!jupyter_notebook_config.py
+!my_test.py
+!setup.py
