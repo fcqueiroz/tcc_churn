@@ -16,8 +16,8 @@ gravity, gravity normalized, monetary, customer age and
 a [pandas_profiling](https://github.com/pandas-profiling/pandas-profiling)
 - Methods for plotting graphs (eg learning curve, roc curve, confusion matrix, 
 precision/recall curve)
-- The [final report](references/relatorio_final pt-BR.pdf) and 
-the [scientific poster](references/poster pt-BR.pdf) are available in the [reports](reports) folder.
+- The [final report](<references/relatorio_final pt-BR.pdf>) and 
+the [scientific poster](<references/poster pt-BR.pdf>) are available in the [references](references) folder.
 
 ## 0.2 - 2018-11-16
 ### Added
@@ -55,7 +55,7 @@ point available for training the model.
 - Project first public version!
 - [README](README.md) with a brief explanation about this project and a ~~hopefully comprehensive~~ guide to run this project on your own machine
 - Informations about the [project structure](references/project_structure.md)
-- [Work plan](references/Work Plan pt-BR.pdf) for my Bachelor Final Project in portuguese (sorry!)
+- [Work plan](<references/Work Plan pt-BR.pdf>) for my Bachelor Final Project in portuguese (sorry!)
 - GNU GPL3 [LICENSE](LICENSE)
 - Analysis reproducibility through [Docker](https://www.docker.com/). If it works on my machine, then it works on yours :)
 - Working code to produce two baseline machine learning results using as a (dummy) estimator the most frequent value and comparing with an unoptimized Decision Tree Classifier.
