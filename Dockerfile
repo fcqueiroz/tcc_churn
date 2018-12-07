@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3
 
-RUN apt-get update --fix-missing && apt-get install -y make && \
+RUN apt-get update --fix-missing && apt-get install -y make gcc graphviz && \
 apt-get clean && \
 rm -rf /var/lib/apt/lists/*
 
@@ -27,10 +27,10 @@ VOLUME /tcc_churn
 
 LABEL maintainer="Fernanda Coelho de Queiroz <fernanda.cdqueiroz@gmail.com>"
 LABEL app_name="tcc_churn"
-LABEL version="0.2"
+LABEL version="0.3"
 
 ENV APP_NAME='tcc_churn'
-ENV APP_VERSION='0.2'
+ENV APP_VERSION='0.3'
 ENV APP_MODELS='/tcc_churn/models/'
 ENV APP_REPORTS='/tcc_churn/reports/'
 ENV DATA_EXTERNAL='/tcc_churn/data/external/'

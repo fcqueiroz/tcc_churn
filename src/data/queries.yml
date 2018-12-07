@@ -1,0 +1,17 @@
+query:
+  customers: " \
+       // Instructions for generating a list of customers from local sqlite database
+       SELECT
+           a.customer_id_column_name,
+           COUNT(a.order_id_column_name) as orders_count
+       FROM orders as a
+       GROUP BY a.customer_id_column_name
+       HAVING
+           orders_count > 1
+       ORDER BY orders_count
+       ;"
+  raw_df: " \
+      // Instructions for extracting the relevant information from local sqlite database
+      SELECT *
+      FROM orders as a
+      ;"

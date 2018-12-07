@@ -2,5 +2,4 @@
 *
 !environment.yml
 !jupyter_notebook_config.py
-!my_test.py
 !setup.py

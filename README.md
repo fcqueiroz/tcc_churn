@@ -24,7 +24,7 @@ Get inside the project root folder
 `cd tcc_churn`  
 
 Build the docker image  
-`docker build -t tcc_churn:0.2 .`
+`docker build --no-cache -t tcc_churn .`
 
 Please check the instructions provided in [make_dataset.py](src/data/make_dataset.py)
 to generate your own dataset before running the program.
@@ -33,7 +33,7 @@ to generate your own dataset before running the program.
 Substitute HOSTPORT by the desired host port that will bind to the container 
 (eg 8888)  
 
-`docker run -d -v /PATH/TO/tcc_churn:/tcc_churn --name notebook -p HOSTPORT:8888 tcc_churn:0.2 jupyter notebook`
+`docker run -d -v /PATH/TO/tcc_churn:/tcc_churn --name notebook -p HOSTPORT:8888 tcc_churn jupyter notebook`
 
 #### Training, Testing and Saving the model
 
@@ -44,7 +44,7 @@ to reach the project root folder eg `/home/fernanda/tcc_churn` or
 __Interactive mode__  
 The program can be run in interactive mode with the following command:  
 
-`docker run -i -v /PATH/TO/tcc_churn:/tcc_churn tcc_churn:0.2 python -m src.base`
+`docker run -i -v /PATH/TO/tcc_churn:/tcc_churn tcc_churn python -m src.base`
 
 __Batch / Non interactive mode__  
 Windows users running docker in cmd.exe might face problems when passing commands 
@@ -63,13 +63,13 @@ For example, the following command will read the raw data, transform in a suitab
 shape for the machine learning algorithm, test its performance in unseen data,
 save the model and the processed datasets for later use and gracefully exit the program.  
 
-`docker run -i -v /PATH/TO/tcc_churn:/tcc_churn tcc_churn:0.2 python -m src.base train test save exit`
+`docker run -i -v /PATH/TO/tcc_churn:/tcc_churn tcc_churn python -m src.base train test save exit`
 
 The testing performance will be saved in [reports/performance.csv](reports/performance.csv)
 
 ## Known Issues
-* There is no available dataset for running the project. A toy dataset will be provided in later releases. 
-* The features provided are not good predictors
+* There is no available dataset for running the project. 
+* Base script is silly. 
 
 ## License
 
